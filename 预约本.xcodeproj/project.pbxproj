@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0008FB1CF1E02600E373A3 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0008FA1CF1E02600E373A3 /* Appointment.swift */; };
 		3C2D0F141CEE959E003CC2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D0F131CEE959E003CC2B8 /* AppDelegate.swift */; };
 		3C2D0F191CEE959E003CC2B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2D0F171CEE959E003CC2B8 /* Main.storyboard */; };
 		3C2D0F1C1CEE959E003CC2B8 /* ___.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D0F1A1CEE959E003CC2B8 /* ___.xcdatamodeld */; };
 		3C2D0F1E1CEE959E003CC2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C2D0F1D1CEE959E003CC2B8 /* Assets.xcassets */; };
 		3C2D0F211CEE959E003CC2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2D0F1F1CEE959E003CC2B8 /* LaunchScreen.storyboard */; };
 		3C2D0F311CEEA5E6003CC2B8 /* AppointmentsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D0F301CEEA5E6003CC2B8 /* AppointmentsTableTableViewController.swift */; };
+		3C3B041E1CF1379E008087B8 /* AddAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B041D1CF1379E008087B8 /* AddAppointment.swift */; };
+		3C3B04251CF16278008087B8 /* AptsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B04231CF16278008087B8 /* AptsListCell.swift */; };
+		3C3B04261CF16278008087B8 /* AptsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3B04241CF16278008087B8 /* AptsListCell.xib */; };
+		3CC298C51CF1E8E300A3153E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0008F31CF1DF1100E373A3 /* Realm.framework */; };
+		3CC298C61CF1E8E300A3153E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0008F31CF1DF1100E373A3 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CC298C71CF1E8E300A3153E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0008F41CF1DF1100E373A3 /* RealmSwift.framework */; };
+		3CC298C81CF1E8E300A3153E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0008F41CF1DF1100E373A3 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3CC298C91CF1E8E300A3153E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CC298C81CF1E8E300A3153E /* RealmSwift.framework in Embed Frameworks */,
+				3CC298C61CF1E8E300A3153E /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3C0008F31CF1DF1100E373A3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		3C0008F41CF1DF1100E373A3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		3C0008FA1CF1E02600E373A3 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appointment.swift; path = ../Appointment.swift; sourceTree = "<group>"; };
 		3C2D0F101CEE959E003CC2B8 /* 预约本.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "预约本.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2D0F131CEE959E003CC2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C2D0F181CEE959E003CC2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +50,9 @@
 		3C2D0F201CEE959E003CC2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C2D0F221CEE959E003CC2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C2D0F301CEEA5E6003CC2B8 /* AppointmentsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentsTableTableViewController.swift; sourceTree = "<group>"; };
+		3C3B041D1CF1379E008087B8 /* AddAppointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAppointment.swift; sourceTree = "<group>"; };
+		3C3B04231CF16278008087B8 /* AptsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptsListCell.swift; sourceTree = "<group>"; };
+		3C3B04241CF16278008087B8 /* AptsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AptsListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +60,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC298C51CF1E8E300A3153E /* Realm.framework in Frameworks */,
+				3CC298C71CF1E8E300A3153E /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0008F71CF1DF1500E373A3 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3C0008F31CF1DF1100E373A3 /* Realm.framework */,
+				3C0008F41CF1DF1100E373A3 /* RealmSwift.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		3C2D0F071CEE959E003CC2B8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +96,11 @@
 		3C2D0F121CEE959E003CC2B8 /* 预约本 */ = {
 			isa = PBXGroup;
 			children = (
-				3C2D0F131CEE959E003CC2B8 /* AppDelegate.swift */,
+				3C2D0F351CEEB50B003CC2B8 /* Views */,
 				3C2D0F321CEEA5F2003CC2B8 /* Controllers */,
-				3C2D0F171CEE959E003CC2B8 /* Main.storyboard */,
-				3C2D0F1D1CEE959E003CC2B8 /* Assets.xcassets */,
-				3C2D0F1F1CEE959E003CC2B8 /* LaunchScreen.storyboard */,
-				3C2D0F221CEE959E003CC2B8 /* Info.plist */,
-				3C2D0F1A1CEE959E003CC2B8 /* ___.xcdatamodeld */,
+				3C2D0F381CEEBD07003CC2B8 /* Models */,
+				3CC298CA1CF1EF0900A3153E /* OtherFiles */,
+				3C0008F71CF1DF1500E373A3 /* Framework */,
 			);
 			path = "预约本";
 			sourceTree = "<group>";
@@ -70,9 +108,40 @@
 		3C2D0F321CEEA5F2003CC2B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C3B041D1CF1379E008087B8 /* AddAppointment.swift */,
 				3C2D0F301CEEA5E6003CC2B8 /* AppointmentsTableTableViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3C2D0F351CEEB50B003CC2B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C3B04231CF16278008087B8 /* AptsListCell.swift */,
+				3C3B04241CF16278008087B8 /* AptsListCell.xib */,
+				3C2D0F171CEE959E003CC2B8 /* Main.storyboard */,
+				3C2D0F1F1CEE959E003CC2B8 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3C2D0F381CEEBD07003CC2B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C0008FA1CF1E02600E373A3 /* Appointment.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3CC298CA1CF1EF0900A3153E /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3C2D0F131CEE959E003CC2B8 /* AppDelegate.swift */,
+				3C2D0F1D1CEE959E003CC2B8 /* Assets.xcassets */,
+				3C2D0F221CEE959E003CC2B8 /* Info.plist */,
+				3C2D0F1A1CEE959E003CC2B8 /* ___.xcdatamodeld */,
+			);
+			name = OtherFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +154,7 @@
 				3C2D0F0C1CEE959E003CC2B8 /* Sources */,
 				3C2D0F0D1CEE959E003CC2B8 /* Frameworks */,
 				3C2D0F0E1CEE959E003CC2B8 /* Resources */,
+				3CC298C91CF1E8E300A3153E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +206,7 @@
 				3C2D0F211CEE959E003CC2B8 /* LaunchScreen.storyboard in Resources */,
 				3C2D0F1E1CEE959E003CC2B8 /* Assets.xcassets in Resources */,
 				3C2D0F191CEE959E003CC2B8 /* Main.storyboard in Resources */,
+				3C3B04261CF16278008087B8 /* AptsListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +218,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2D0F141CEE959E003CC2B8 /* AppDelegate.swift in Sources */,
+				3C3B041E1CF1379E008087B8 /* AddAppointment.swift in Sources */,
 				3C2D0F311CEEA5E6003CC2B8 /* AppointmentsTableTableViewController.swift in Sources */,
+				3C3B04251CF16278008087B8 /* AptsListCell.swift in Sources */,
 				3C2D0F1C1CEE959E003CC2B8 /* ___.xcdatamodeld in Sources */,
+				3C0008FB1CF1E02600E373A3 /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +335,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/预约本",
+				);
 				INFOPLIST_FILE = "预约本/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dinu.app.---";
@@ -272,6 +350,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/预约本",
+				);
 				INFOPLIST_FILE = "预约本/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dinu.app.---";
@@ -298,6 +380,7 @@
 				3C2D0F271CEE959E003CC2B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
